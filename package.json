@@ -1,0 +1,15 @@
+{
+  "name": "dogemoticon",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "dogescript": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "node_modules/dogescript/bin/dogescript.js src/index.djs > index.js"
+  },
+  "author": "Joshua Nelson",
+  "license": "ISC"
+}
