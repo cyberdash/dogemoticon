@@ -11,8 +11,6 @@ such convertString much s
     very rows = [[],[],[],[],[]]
     much very letterIndex as 0 next letterIndex smaller s.length next letterIndex more 1
         very ascii is convertLetter(s[letterIndex])
-
-
             much very rowIndex as 0 next rowIndex smaller 5 next rowIndex more 1
 
                 rly ascii
@@ -24,9 +22,12 @@ such convertString much s
     wow
 wow rows.map(function (entireRow) { return entireRow.join('') }).join('\n')
 
-dogeument.addEventListener('input', function () {
-	very input = dogeument.getElementById('in')
-	very positiveValue = dogeument.getElementById('positive').value
-	very negativeValue = dogeument.getElementById('negative').value
+such refreshInputs
+	very input is dogeument.getElementById('in')
+	very positiveValue is dogeument.getElementById('positive').value
+	very negativeValue is dogeument.getElementById('negative').value
     dogeument.getElementById('out').value = convertString(input.value).replace(/x/g, positiveValue).replace(/\./g, negativeValue)
-});
+wow
+
+dogeument.addEventListener('input', refreshInputs);
+plz refreshInputs

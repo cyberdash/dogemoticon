@@ -12,8 +12,6 @@ function convertString (s) {
 var rows = [[],[],[],[],[]];
 for ( var letterIndex  = 0 ; letterIndex  < s.length ; letterIndex  += 1 ) {
 var ascii = convertLetter(s[letterIndex]);
-
-
 for ( var rowIndex  = 0 ; rowIndex  < 5 ; rowIndex  += 1 ) {
 
 if (ascii ) {
@@ -26,9 +24,12 @@ if (ascii ) {
 return rows.map(function (entireRow) { return entireRow.join('') }).join('\n');
 } 
 
-document.addEventListener('input', function () {
+function refreshInputs () { 
 var input = document.getElementById('in');
 var positiveValue = document.getElementById('positive').value;
 var negativeValue = document.getElementById('negative').value;
     document.getElementById('out').value = convertString(input.value).replace(/x/g, positiveValue).replace(/\./g, negativeValue)
-});
+} 
+
+document.addEventListener('input', refreshInputs);
+refreshInputs();

@@ -1,27 +1,30 @@
 <head>
     <title>Oh wow</title>
     <head>
-        <script src="index.js"></script>
-    <style>
-        textarea {
-            font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
-        }
-    </style>
+    <script src="src/rainbow.js"></script>
+    <link rel="stylesheet" href="src/index.css">
     </head>
 
     <body>
-        <p>
-            <label for="in">Dogeify this: </label> <input id="in"/>
-        </p>
+        <form>
+            <p>
+                <label for="in">Dogeify this:</label> <input id="in" value="DOGE"/>
+            </p>
 
-        <p>
-            <label for="positive">Positive space: </label> <input id="positive"/>
-        </p>
+            <p>
+                <label for="positive">Positive space: </label> <input id="positive" value="(ohwow)"/>
+            </p>
 
-        <p>
-            <label for="negative">Negative space: </label> <input id="negative"/>
-        </p>
+            <p>
+                <label for="negative">Negative space: </label> <input id="negative" value="(wow)"/>
+            </p>
 
-        <textarea id="out" rows="5" cols="100"></textarea>
+            <textarea id="out" rows="5" cols="100" onfocus="this.select()"></textarea>
+
+            <p><span>Much copy.</span>
+                <span>Oh wow.</span>
+                <span>Paste into the <a href="https://www.hipchat.com/">HipChat</a>.</span> <span>So fun, no regrats. Wow.</span></p>
+        </form>
+        <script src="index.js"></script>
     </body>
 </head>
